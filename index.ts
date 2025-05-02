@@ -151,7 +151,7 @@ function substraction(a: number, b: number, c: number = 0) : number {
 let value: unknown = "Asraful";
 let cName = value as string;
 
-const hello ={
+const hello = {
      name : 'asraful',
      func(){
          const  funct = ()=>{
@@ -162,3 +162,6 @@ const hello ={
  } 
 
 hello.func()
+
+// ts Generic
+

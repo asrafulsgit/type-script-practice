@@ -104,3 +104,4 @@ const hello = {
     }
 };
 hello.func();
+// ts Generic
