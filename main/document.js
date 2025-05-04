@@ -54,4 +54,20 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         return data;
     });
     tsWithPromise();
+    const typeCheck = (para1, para2) => {
+        if (typeof para1 === 'number' && typeof para2 === 'number') {
+            return para1 + para2;
+        }
+        else {
+            return para1.toString() + para2.toString();
+        }
+    };
+    const checkVisitor = (visitor) => {
+        if ('role' in visitor) {
+            // you can access visitor.role and visitor.name
+        }
+        else {
+            // you can access only visitor.name
+        }
+    };
 }

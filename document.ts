@@ -101,6 +101,50 @@ tsWithPromise()
 
 
 
+// type guard 
+
+type guarding = string | number;
+const typeCheck = (para1 : guarding, para2 :guarding) : guarding =>{
+
+    if(typeof para1 === 'number' && typeof para2 === 'number'){
+        return para1 + para2
+    }else{
+        return para1.toString() + para2.toString()
+    }
+
+}
+
+// console.log(typeCheck(10,5))
+
+
+// type in 
+
+
+interface User {
+    name : string,
+}
+
+interface Admin{
+    name : string;
+    role : 'Admin';
+}
+
+const checkVisitor = (visitor : User | Admin)=>{
+    if('role' in visitor){
+        // you can access visitor.role and visitor.name
+    }else{
+        // you can access only visitor.name
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 
